@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Model Deployment for FIFA</title>
+</head>
+<body>
+    <h1>Machine Learning Model Deployment</h1>
+    <form action="/predict" method="post">
+        <!-- Example input fields, adjust based on your model's requirements -->
+        Enter Feature 1: <input type="number" name="movement_reactions"><br><br>
+        Enter Feature 2: <input type="number" name="potential"><br><br>
+        Enter Feature 3: <input type="number" name="passing"><br><br>
+        Enter Feature 4: <input type="number" name="wage_eur"><br><br>
+        Enter Feature 5: <input type="number" name="mentality_composure"><br><br>
+        Enter Feature 6: <input type="number" name="value_eur"><br><br>
+        Enter Feature 7: <input type="number" name="dribbling"><br><br>
+        Enter Feature 8: <input type="number" name="attacking_short_passing"><br><br>
+        Enter Feature 9: <input type="number" name="mentality_vision"><br><br>
+        Enter Feature 10: <input type="number" name="international_reputation"><br><br>
+        Enter Feature 11: <input type="number" name="skill_long_passing"><br><br>
+        Enter Feature 12: <input type="number" name="power_shot_power"><br><br>
+        Enter Feature 12: <input type="number" name="age"><br><br>
+        Enter Feature 12: <input type="number" name="skill_ball_control"><br><br>
+
+        <!-- Add more fields as needed -->
+
+        <!-- Submit button -->
+        <input type="submit" value="Predict">
+    </form>
+
+    <!-- Display prediction -->
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>
